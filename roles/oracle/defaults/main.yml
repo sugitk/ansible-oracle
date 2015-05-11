@@ -1,0 +1,40 @@
+
+---
+# defaults for oracle installation
+
+# to be added to /etc/hosts
+oracle_hostname: node1
+
+# location for temporary installation files
+oracle_tmp: /tmp/oracle
+
+#
+# oracle connection settings
+#
+
+# ORACLE_BASE parent, {{ oracle_path }}/oracle
+oracle_path: /u01/app
+
+# ORACLE_SID
+oracle_db_name: orcl
+
+# ORACLE_HOME basename, {{ oracle_path }}/oracle/product/11.2.0/{{ oracle_db_home }}
+oracle_db_home: oracle_db_home
+
+#
+# oracle system user
+#
+
+# oracle user username
+oracle_user: oracle
+
+# hashed password for the oracle user
+# python -c 'import crypt; print crypt.crypt("oracle", "$1$salt$")'
+oracle_pass: $1$salt$6hY7SFGTovD5BRJ.4zYAd1
+
+# primary oracle group
+oracle_group: oinstall
+
+# DBA group
+oracle_dba_group: dba
+
