@@ -1,0 +1,6 @@
+---
+# shell environment for the grid user
+grid_user_env:
+  ORACLE_BASE: "{{ oracle_path }}/grid"
+  ORACLE_HOME: "{{ oracle_path }}/11.2.0/grid"
+  NLS_LANG: "Japanese_Japan.UTF8"

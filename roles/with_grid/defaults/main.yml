@@ -1,0 +1,26 @@
+---
+# defaults for grid installation
+
+# location for temporary installation files
+grid_tmp: /tmp/grid
+
+#
+# oracle connection settings
+#
+
+# ORACLE_BASE parent, {{ oracle_path }}/grid
+oracle_path: /u01/app
+
+#
+# grid system user
+#
+
+# grid user username
+grid_user: grid
+
+# hashed password for the grid user
+# python -c 'import crypt; print crypt.crypt("grid", "$1$salt$")'
+grid_pass: $1$salt$QxNY/j4dVS4hHOLp89xDU0
+
+# primary grid group
+grid_group: oinstall

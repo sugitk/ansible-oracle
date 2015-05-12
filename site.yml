@@ -3,3 +3,9 @@
   user: root
   roles:
   - oracle
+
+- hosts: grid nodes
+  user: root
+  roles:
+  - oracle
+  - with_grid
