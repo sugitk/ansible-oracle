@@ -1,4 +1,21 @@
 ---
+- name: download ASMLib-support
+  command: "wget -q -O {{ oracleasm_support_file }} --no-cookies --no-check-certificate --header 'Cookie: oraclelicense=accept-securebackup-cookie' {{ oracleasm_support_url }}"
+  poll: 10
+
+- name: install ASMLib-support
+  yum: name={{ oracleasm_support_file }} state=present
+
+- name: download ASMLib
+  command: "wget -q -O {{ oracleasm_lib_file }} --no-cookies --no-check-certificate --header 'Cookie: oraclelicense=accept-securebackup-cookie' {{ oracleasm_lib_url }}"
+  poll: 10
+
+- name: install ASMLib
+  yum: name={{ oracleasm_lib_file }} state=present
+
+- name: install kmod-oracleasm
+  yum: name="kmod-oracleasm" state=present
+
 - name: set up the oracle hostnames
   lineinfile:
     dest: /etc/hosts
