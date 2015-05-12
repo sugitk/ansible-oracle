@@ -1,6 +1,7 @@
 # Prepare to install Oracle for Ansible
 
-This role configures Oracle Database 11g Release 2 prerequisites for CentOS 6.
+These roles configure Oracle Database 11g Release 2 and Grid Infrastructure
+prerequisites for CentOS 6.
 
 ## Requirements
 
