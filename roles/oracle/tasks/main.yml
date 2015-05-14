@@ -1,7 +1,4 @@
 ---
-- name: install dev tools
-  yum: name="@Development tools" state=present
-
 - name: install x86_64 oracle dependencies
   yum: name={{ item }} state=present
   with_items:
@@ -40,15 +37,6 @@
   yum: name={{ item }} state=present
   with_items:
     - libselinux-python
-
-- name: set up the oracle hostnames
-  lineinfile:
-    dest: /etc/hosts
-    state: present
-    line: "127.0.0.1 {{ item }}"
-  with_items:
-    - "{{ oracle_hostname }}"
-    - "{{ ansible_hostname }}"
 
 - name: oracle-recommended sysctl
   sysctl:
