@@ -67,6 +67,14 @@
     password: "{{ grid_pass }}"
     append: yes
 
+- name: modify the permission of grid installation path
+  file:
+    mode: 0775
+    path: "{{ grid_path }}"
+    state: directory
+    group: "{{ oracle_group }}"
+    owner: "{{ grid_user }}"
+
 - name: set grid user environment
   lineinfile: dest=/home/{{ grid_user }}/.bashrc state=present line="{{ item }}"
   with_items:

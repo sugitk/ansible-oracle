@@ -8,8 +8,8 @@ grid_tmp: /tmp/grid
 # oracle connection settings
 #
 
-# ORACLE_BASE parent, {{ oracle_path }}/grid
-oracle_path: /u01/app
+# {{ grid_path }}/app/grid
+grid_path: /u01
 
 #
 # grid system user
