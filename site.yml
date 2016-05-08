@@ -1,11 +1,11 @@
 ---
-- hosts: oracle nodes
-  user: root
+- hosts: oracle_nodes
+  remote_user: root
   roles:
-  - oracle
+  - oracle11gr2
 
-- hosts: grid nodes
-  user: root
+- hosts: grid_nodes
+  remote_user: root
   roles:
-  - oracle
-  - with_grid
+  - oracle11gr2
+  - grid11gr2

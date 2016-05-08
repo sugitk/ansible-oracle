@@ -1,5 +1,6 @@
-[oracle nodes]
+[oracle_nodes]
+192.168.0.10
 
-[grid nodes]
-10.10.10.10
-10.10.10.11
+[grid_nodes]
+#10.10.10.10
+#10.10.10.11
