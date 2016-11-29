@@ -6,7 +6,7 @@ prerequisites for CentOS 6.
 ## Requirements
 
 - CentOS 6.4+
-- Ansible 1.4
+- Ansible 2.0+
 
 ## Thanks
 
