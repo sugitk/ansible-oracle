@@ -1,10 +1,10 @@
 ---
-- hosts: oracle nodes
+- hosts: oracle_nodes
   user: root
   roles:
   - oracle
 
-- hosts: grid nodes
+- hosts: grid_nodes
   user: root
   roles:
   - oracle
