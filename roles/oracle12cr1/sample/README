@@ -1,0 +1,2 @@
+[oracle@oel65 ~]$ cd database
+[oracle@oel65 database]$ ./runInstaller -silent -responseFile /home/oracle/db_install.rsp

@@ -1,10 +1,15 @@
 ---
-- hosts: oracle_nodes
+- hosts: oracle12c_nodes
+  remote_user: root
+  roles:
+  - oracle12cr1
+
+- hosts: oracle11g_nodes
   remote_user: root
   roles:
   - oracle11gr2
 
-- hosts: grid_nodes
+- hosts: grid11g_nodes
   remote_user: root
   roles:
   - oracle11gr2
