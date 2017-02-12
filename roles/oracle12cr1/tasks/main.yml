@@ -8,12 +8,6 @@
   command: rpm -Va
   ignore_errors: yes
 
-- name: set up the oracle hostnames
-  lineinfile:
-    dest: /etc/hosts
-    state: present
-    line: "{{ hostvars[inventory_hostname]['ansible_default_ipv4']['address'] }} {{ oracle_hostname }}"
-
 - name: install x86_64 oracle dependencies
   yum: name={{ item }} state=present
   with_items:
@@ -57,6 +51,12 @@
   yum: name={{ item }} state=present
   with_items:
     - libselinux-python
+
+- name: set up the oracle hostnames
+  lineinfile:
+    dest: /etc/hosts
+    state: present
+    line: "{{ hostvars[inventory_hostname]['ansible_default_ipv4']['address'] }} {{ oracle_hostname }}"
 
 - name: oracle-recommended sysctl
   sysctl:
