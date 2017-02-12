@@ -5,11 +5,11 @@ These roles configure Oracle Database prerequisites for CentOS/RHEL/OEL 6.
 ## Requirements
 
 - Oracle Database 11gR2, Grid Infrastructure 11gR2
--- CentOS 6.4+
--- Ansible 2.0+
+  - CentOS 6.4+
+  - Ansible 2.0+
 - Oracle Database 12cR1 Enterprise Edition
--- Oracle Enterprise Linux 6.5
--- Ansible 2.2+
+  - Oracle Enterprise Linux 6.5
+  - Ansible 2.2+
 
 ## Thanks
 
