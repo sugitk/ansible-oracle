@@ -20,10 +20,7 @@
   lineinfile:
     dest: /etc/hosts
     state: present
-    line: "127.0.0.1 {{ item }}"
-  with_items:
-    - "{{ oracle_hostname }}"
-    - "{{ ansible_hostname }}"
+    line: "{{ hostvars[inventory_hostname]['ansible_default_ipv4']['address'] }} {{ server_hostname }} {{ server_hostname }}.{{ server_domainname }}"
 
 - name: oracle-recommended security limits
   lineinfile:
