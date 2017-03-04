@@ -1,5 +1,7 @@
 [oracle12c_nodes]
 #192.168.0.14
+ora1
+ora2
 
 [oracle11g_nodes]
 #192.168.0.10
