@@ -1,16 +1,25 @@
 ---
 - hosts: oracle12c_nodes
-  remote_user: root
+  remote_user: oracle
+  become: true
+  become_user: root
+  become_method: sudo
   roles:
   - oracle12cr1
 
 - hosts: oracle11g_nodes
-  remote_user: root
+  remote_user: oracle
+  become: true
+  become_user: root
+  become_method: sudo
   roles:
   - oracle11gr2
 
 - hosts: grid11g_nodes
-  remote_user: root
+  remote_user: oracle
+  become: true
+  become_user: root
+  become_method: sudo
   roles:
   - oracle11gr2
   - grid11gr2
