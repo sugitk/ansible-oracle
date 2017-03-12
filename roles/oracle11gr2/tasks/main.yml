@@ -129,3 +129,5 @@
     - "export NLS_LANG={{ ora_user_env.NLS_LANG }}"
     - "stty erase ^H"
 
+- name: copy response file for silent install
+  template: src=db_install.rsp.j2 dest=/home/{{ oracle_user}}/db_install.rsp

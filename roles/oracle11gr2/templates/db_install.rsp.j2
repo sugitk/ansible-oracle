@@ -34,12 +34,12 @@ oracle.install.option=INSTALL_DB_SWONLY
 # first hostname found on the system. (e.g., for systems with multiple hostnames 
 # and network interfaces)
 #-------------------------------------------------------------------------------
-ORACLE_HOSTNAME=ora11gr2
+ORACLE_HOSTNAME={{ ansible_hostname }}
 
 #-------------------------------------------------------------------------------
 # Specify the Unix group to be set for the inventory directory.  
 #-------------------------------------------------------------------------------
-UNIX_GROUP_NAME=oinstall
+UNIX_GROUP_NAME={{ oracle_group }}
 
 #-------------------------------------------------------------------------------
 # Specify the location which holds the inventory files.

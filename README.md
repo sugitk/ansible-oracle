@@ -11,6 +11,11 @@ These roles configure Oracle Database prerequisites for CentOS/RHEL/OEL 6.
   - Oracle Enterprise Linux 6.5
   - Ansible 2.2+
 
+## To use a response file to install database software
+
+[oracle@ora11gr2 ~]$ cd database
+[oracle@ora11gr2 database]$ ./runInstaller -silent -responseFile /home/oracle/db_install.rsp
+
 ## Thanks
 
 - Original scripts are written by ellotheth https://github.com/ellotheth/ansible-oracle
