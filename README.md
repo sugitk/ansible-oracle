@@ -13,8 +13,10 @@ These roles configure Oracle Database prerequisites for CentOS/RHEL/OEL 6.
 
 ## To use a response file to install database software
 
+```
 [oracle@ora11gr2 ~]$ cd database
 [oracle@ora11gr2 database]$ ./runInstaller -silent -responseFile /home/oracle/db_install.rsp
+```
 
 ## Thanks
 
