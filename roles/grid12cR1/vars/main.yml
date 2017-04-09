@@ -1,0 +1,13 @@
+---
+# shell environment for the grid user
+grid_user_env:
+  ORACLE_BASE: "{{ oracle_path }}/grid"
+  ORACLE_HOME: "{{ oracle_path }}/12.1.0/grid"
+  NLS_LANG: "Japanese_Japan.UTF8"
+
+# Oracle ASM
+oracleasm_support_file: oracleasm-support-2.1.8-1.el6.x86_64.rpm
+oracleasm_support_url: http://oss.oracle.com/projects/oracleasm-support/dist/files/RPMS/rhel6/amd64/2.1.8/oracleasm-support-2.1.8-1.el6.x86_64.rpm
+
+oracleasm_lib_file: oracleasmlib-2.0.4-1.el6.x86_64.rpm
+oracleasm_lib_url: http://download.oracle.com/otn_software/asmlib/oracleasmlib-2.0.4-1.el6.x86_64.rpm

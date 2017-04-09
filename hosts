@@ -1,10 +1,14 @@
 [oracle12c_nodes]
 #192.168.0.14
-ora1
-ora2
+#ora1
+#ora2
 
 [oracle11g_nodes]
 #192.168.0.10
+
+[grid12c_nodes]
+#rac1
+#rac2
 
 [grid11g_nodes]
 #10.10.10.10

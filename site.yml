@@ -14,3 +14,9 @@
   roles:
   - oracle11gr2
   - grid11gr2
+
+- hosts: grid12c_nodes
+  remote_user: root
+  roles:
+  - oracle12cr1
+  - grid12cr1
